@@ -6,6 +6,11 @@
     <title>Aronno Chowdhury | MERN Stack Developer</title>
     <link rel="icon" type="image/png" href="images/title-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
         body {
@@ -13,6 +18,7 @@
             background-color: #0d1117;
             color: #c9d1d9;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
         
         /* Animation keyframes for the fiery neon glow effect */
@@ -30,6 +36,7 @@
         .scroll-mt-24 {
             scroll-margin-top: 6rem;
         }
+        
 
         /* Neon text effect for the main heading */
         .neon-glow {
@@ -148,7 +155,7 @@
     <main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <!-- Hero Section -->
-        <section id="hero" class="text-center py-24 md:py-32 flex flex-col items-center">
+        <section id="hero" class="text-center py-24 md:py-32 flex flex-col items-center" data-aos="fade-down" data-aos-duration="1000">
             <img src="images/IMG_7804.PNG" alt="Aronno Chowdhury" class="w-60 h-60 rounded-full border-4 border-[#30363d] mt-[-100px] mb-[40px] shadow-lg object-cover transition-transform duration-300 hover:scale-110 hover:border-[#39ff14]">
             <h1 class="text-4xl md:text-6xl font-extrabold text-[#c9d1d9] leading-tight mb-4 neon-glow">
                 Aronno Chowdhury
@@ -170,7 +177,7 @@
 
         <!-- About Section -->
         <section id="about" class="py-16 md:py-24 scroll-mt-24">
-            <div class="max-w-4xl mx-auto bg-[#161b22] p-8 rounded-2xl shadow-xl border border-gray-700">
+            <div class="max-w-4xl mx-auto bg-[#161b22] p-8 rounded-2xl shadow-xl border border-gray-700" data-aos="flip-left" data-aos-duration="1000">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-[#c9d1d9]">About Me</h2>
                 <p class="text-gray-400 leading-relaxed text-lg mb-4">
                     As a dedicated Computer Engineer and MERN stack frontend expert, I specialize in transforming complex problems into elegant, user-friendly solutions. My journey in development has been defined by a commitment to mastering modern technologies and a relentless pursuit of clean, maintainable code.
@@ -184,7 +191,7 @@
         <!-- Skills Section -->
         <section id="skills" class="py-16 md:py-24 scroll-mt-24">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#c9d1d9]">My Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6" data-aos="flip-left" data-aos-duration="1000">
                 <!-- Skill Card -->
                 <div class="flex flex-col items-center p-6 bg-[#161b22] rounded-2xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
                     <svg class="w-12 h-12 mb-3 text-[#39ff14]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.32 15.32c-.52.52-1.37.84-2.26.84-1.89 0-3.43-1.54-3.43-3.43 0-.89.32-1.74.84-2.26l1.45-1.45c.19-.19.45-.3.71-.3h.01c.26 0 .52.11.71.3l1.45 1.45c.52.52.84 1.37.84 2.26 0 1.89-1.54 3.43-3.43 3.43zM12 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
@@ -223,7 +230,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#c9d1d9]">Featured Projects</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Project Card 1 -->
-                <div class="bg-[#161b22] rounded-2xl shadow-xl border border-gray-700 overflow-hidden">
+                <div class="bg-[#161b22] rounded-2xl shadow-xl border border-gray-700 overflow-hidden" data-aos="flip-left" data-aos-duration="1000">
                     <img src="images/medical-website.png" alt="Project 1" class="w-full h-auto object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#c9d1d9] mb-2">A Medical University Site</h3>
@@ -240,7 +247,7 @@
                     </div>
                 </div>
                 <!-- Project Card 2 -->
-                <div class="bg-[#161b22] rounded-2xl shadow-xl border border-gray-700 overflow-hidden">
+                <div class="bg-[#161b22] rounded-2xl shadow-xl border border-gray-700 overflow-hidden" data-aos="flip-left" data-aos-duration="1000">
                     <img src="images/o-c-m-s.png" alt="Project 2" class="w-full h-auto object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#c9d1d9] mb-2">Online Course Management System</h3>
@@ -259,7 +266,7 @@
                     </div>
                 </div>
                 <!-- Project Card 3 -->
-                <div class="bg-[#161b22] rounded-2xl shadow-xl border border-gray-700 overflow-hidden">
+                <div class="bg-[#161b22] rounded-2xl shadow-xl border border-gray-700 overflow-hidden" data-aos="flip-left" data-aos-duration="1000">
                     <img src="images/foodora.png" alt="Project 3" class="w-full h-auto object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#c9d1d9] mb-2">Foodora</h3>
@@ -276,7 +283,7 @@
                     </div>
                 </div>
                  <!-- Project Card 4 -->
-                <div class="bg-[#161b22] rounded-2xl shadow-xl border border-gray-700 overflow-hidden">
+                <div class="bg-[#161b22] rounded-2xl shadow-xl border border-gray-700 overflow-hidden" data-aos="flip-left" data-aos-duration="1000">
                     <img src="images/easy&fastest.png" alt="Project 3" class="w-full h-auto object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-[#c9d1d9] mb-2">Easy & Fastest</h3>
@@ -296,7 +303,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-16 md:py-24 scroll-mt-24">
+        <section id="contact" class="py-16 md:py-24 scroll-mt-24" data-aos="flip-left" data-aos-duration="1000">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-[#c9d1d9]">Get in Touch</h2>
             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
                 <!-- Contact Details Card -->
@@ -337,7 +344,7 @@
                             <label for="message" class="block text-gray-400 mb-1">Message</label>
                             <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-xl bg-[#0d1117] border border-gray-700 focus:outline-none focus:border-[#39ff14] transition-colors" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-[#39ff14] text-black py-3 rounded-xl font-semibold hover:bg-[#2fff00] transition-colors">Send Message</button>
+                        <button id="sended" onclick="mgsSended(id)" type="submit" class="w-full bg-[#39ff14] text-black py-3 rounded-xl font-semibold hover:bg-[#2fff00] transition-colors">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -386,6 +393,15 @@ mobile_icon.addEventListener("click", ()=> {
             console.log('Form submitted:', { name, email, message });
             form.reset();
         });
+        function mgsSended(id){
+            const sended = document.getElementById(id);
+            if(sended.innerText = "Send Message"){
+                sended.innerText = ("Sended Successfully!");
+                sended.classList.add("bg-white");
+            }
+        }
+
+        AOS.init();
     </script>
 </body>
 </html>

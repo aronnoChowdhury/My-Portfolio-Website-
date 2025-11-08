@@ -6,6 +6,11 @@
     <title>Aronno Chowdhury | MERN Stack Developer</title>
     <link rel="icon" type="image/png" href="images/title-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
+        <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
         body {
@@ -145,7 +150,7 @@
     </header>
 
     <!--My Skills-->
-    <section>
+    <section data-aos="flip-left" data-aos-duration="1000">
         <div class="max-width-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="border px-2 py-4 my-2 mx-2 rounded-xl hover:shadow hover:shadow-[#2fff00]">
@@ -159,7 +164,7 @@ I am committed to writing clean, well-documented, and reusable code. I thrive in
                 </div>
             </div>
 
-            <div class="my-10">
+            <div class="my-10" data-aos="flip-left" data-aos-duration="1000">
                 <h1 class="text-4xl text-center border-b-2 border-gray-300 pb-2">My Skills</h1>
             </div>
 
@@ -202,6 +207,7 @@ let main_manu = document.getElementById("main_manu");
 mobile_icon.addEventListener("click", ()=> {
     main_manu.classList.toggle('hidden');
 })
+   AOS.init();
     </script>
 </body>
 </html>

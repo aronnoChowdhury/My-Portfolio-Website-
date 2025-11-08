@@ -6,6 +6,11 @@
     <title>Aronno Chowdhury | MERN Stack Developer</title>
     <link rel="icon" type="image/png" href="images/title-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
+        <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
         body {
@@ -13,6 +18,7 @@
             background-color: #0d1117;
             color: #c9d1d9;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
         
         /* Animation keyframes for the fiery neon glow effect */
@@ -146,14 +152,14 @@
 
     <!--About Me-->
     <section>
-            <div>
+            <div data-aos="fade-down" data-aos-duration="1000">
             <img src="images/cover-aronno.png" alt="aronno" class="w-full h-auto transparent">
             </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div>
                 <h1 class="text-center pt-12 text-3xl font-bold border-b-2 border-gray-400">About Me</h1>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="grid grid-cols-1 md:grid-cols-2" data-aos="flip-left" data-aos-duration="1000">
                 <div class="border border-gray-400 my-12 mx-4 rounded-xl px-2 py-4 hover:scale-[1.02] transition duration-300 hover:shadow hover:shadow-[#2fff00]">
                     <h3 class="text-lg font-semibold">About Me</h3>
                     <p class="text-sm">As a dedicated Computer Engineer and MERN stack frontend expert, I specialize in transforming complex problems into elegant, user-friendly solutions. My journey in development has been defined by a commitment to mastering modern technologies and a relentless pursuit of clean, maintainable code.I thrive on the challenges of creating dynamic and responsive web applications. My expertise spans from crafting intuitive UI with React to optimizing application performance and state management with Redux. I am passionate about the entire development lifecycle, from initial design concepts to final deployment, always with an eye for delivering a seamless user experience.A coding enthusiast and global traveler. My favorite things are clean code, complex problem-solving, and a packed suitcase. I believe the best solutions are found by thinking analytically and seeing the world from many different perspectives.Coding the logical world by night, traveling the real one by day. I thrive on the satisfaction of solving a tough technical puzzle, but I'm equally fulfilled by getting lost in a new city. If it involves a passport, a new framework, or a complex logic problem, I'm in. Constantly learning, always building, and forever seeking the next adventure.</p>
@@ -177,6 +183,7 @@ let main_manu = document.getElementById("main_manu");
 mobile_icon.addEventListener("click", ()=> {
     main_manu.classList.toggle('hidden');
 })
+    AOS.init();
     </script>
 </body>
 </html>
